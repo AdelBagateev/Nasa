@@ -42,6 +42,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>TerminaTest-ExtraLight.otf</string>
+		<string>TerminaTest-Black.otf</string>
+		<string>TerminaTest-Medium.otf</string>
+		<string>TerminaTest-Bold.otf</string>
+	</array>
 	<key>UILaunchScreen</key>
 	<dict/>
 </dict>

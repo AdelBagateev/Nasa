@@ -12,6 +12,23 @@
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		5FC2FDDE0D6720CD3900B0DB /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB018D85D29C590E3F6B3F8 /* Pods_iosApp.framework */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		EF1F468E2BE257EC007CDCE2 /* TerminaTest-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF1F468D2BE257EC007CDCE2 /* TerminaTest-ExtraLight.otf */; };
+		EF1F46902BE26511007CDCE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F468F2BE26511007CDCE2 /* TabBarView.swift */; };
+		EF1F46922BE26814007CDCE2 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F46912BE26814007CDCE2 /* CustomBackgroundView.swift */; };
+		EF1F46942BE26B9D007CDCE2 /* TerminaTest-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF1F46932BE26B9D007CDCE2 /* TerminaTest-Black.otf */; };
+		EF1F46962BE26BF9007CDCE2 /* TerminaTest-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF1F46952BE26BF9007CDCE2 /* TerminaTest-Medium.otf */; };
+		EF1F46992BE27044007CDCE2 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F46982BE27044007CDCE2 /* DataType.swift */; };
+		EF1F469B2BE27067007CDCE2 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F469A2BE27067007CDCE2 /* Row.swift */; };
+		EF1F469E2BE2709D007CDCE2 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F469D2BE2709D007CDCE2 /* CollectionView.swift */; };
+		EF1F46A02BE270B2007CDCE2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F469F2BE270B2007CDCE2 /* DetailView.swift */; };
+		EF1F46A22BE270CA007CDCE2 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F46A12BE270CA007CDCE2 /* RowView.swift */; };
+		EF1F46A42BE27A5F007CDCE2 /* GenerateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F46A32BE27A5F007CDCE2 /* GenerateView.swift */; };
+		EF1F46A62BE27AB9007CDCE2 /* AboutSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F46A52BE27AB9007CDCE2 /* AboutSpaceView.swift */; };
+		EF1F46A82BE27B77007CDCE2 /* OvalTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F46A72BE27B77007CDCE2 /* OvalTextFieldStyle.swift */; };
+		EF1F46AA2BE27BA4007CDCE2 /* EnterGenerateFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F46A92BE27BA4007CDCE2 /* EnterGenerateFieldView.swift */; };
+		EF1F46B02BE2952D007CDCE2 /* DetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F46AF2BE2952D007CDCE2 /* DetailListView.swift */; };
+		EF1F46B22BE29FCA007CDCE2 /* TerminaTest-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF1F46B12BE29FCA007CDCE2 /* TerminaTest-Bold.otf */; };
+		EF1F46B42BE2A07F007CDCE2 /* DetailAboutObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F46B32BE2A07F007CDCE2 /* DetailAboutObjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +41,23 @@
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F5DB648C4315BE088749F13 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EF1F468D2BE257EC007CDCE2 /* TerminaTest-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TerminaTest-ExtraLight.otf"; sourceTree = "<group>"; };
+		EF1F468F2BE26511007CDCE2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		EF1F46912BE26814007CDCE2 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		EF1F46932BE26B9D007CDCE2 /* TerminaTest-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TerminaTest-Black.otf"; sourceTree = "<group>"; };
+		EF1F46952BE26BF9007CDCE2 /* TerminaTest-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TerminaTest-Medium.otf"; sourceTree = "<group>"; };
+		EF1F46982BE27044007CDCE2 /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		EF1F469A2BE27067007CDCE2 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		EF1F469D2BE2709D007CDCE2 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		EF1F469F2BE270B2007CDCE2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		EF1F46A12BE270CA007CDCE2 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		EF1F46A32BE27A5F007CDCE2 /* GenerateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateView.swift; sourceTree = "<group>"; };
+		EF1F46A52BE27AB9007CDCE2 /* AboutSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSpaceView.swift; sourceTree = "<group>"; };
+		EF1F46A72BE27B77007CDCE2 /* OvalTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalTextFieldStyle.swift; sourceTree = "<group>"; };
+		EF1F46A92BE27BA4007CDCE2 /* EnterGenerateFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterGenerateFieldView.swift; sourceTree = "<group>"; };
+		EF1F46AF2BE2952D007CDCE2 /* DetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListView.swift; sourceTree = "<group>"; };
+		EF1F46B12BE29FCA007CDCE2 /* TerminaTest-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TerminaTest-Bold.otf"; sourceTree = "<group>"; };
+		EF1F46B32BE2A07F007CDCE2 /* DetailAboutObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAboutObjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +86,6 @@
 				9F5DB648C4315BE088749F13 /* Pods-iosApp.debug.xcconfig */,
 				52BC5707379AEB07BF3F67B3 /* Pods-iosApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,6 +110,11 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				EF1F46A72BE27B77007CDCE2 /* OvalTextFieldStyle.swift */,
+				EF1F46A92BE27BA4007CDCE2 /* EnterGenerateFieldView.swift */,
+				EF1F469C2BE27091007CDCE2 /* View */,
+				EF1F46972BE2701D007CDCE2 /* Model */,
+				EF1F468C2BE25795007CDCE2 /* Font */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
@@ -92,6 +130,42 @@
 				6AB018D85D29C590E3F6B3F8 /* Pods_iosApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF1F468C2BE25795007CDCE2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EF1F46B12BE29FCA007CDCE2 /* TerminaTest-Bold.otf */,
+				EF1F46932BE26B9D007CDCE2 /* TerminaTest-Black.otf */,
+				EF1F468D2BE257EC007CDCE2 /* TerminaTest-ExtraLight.otf */,
+				EF1F46952BE26BF9007CDCE2 /* TerminaTest-Medium.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		EF1F46972BE2701D007CDCE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF1F46982BE27044007CDCE2 /* DataType.swift */,
+				EF1F469A2BE27067007CDCE2 /* Row.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF1F469C2BE27091007CDCE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF1F469D2BE2709D007CDCE2 /* CollectionView.swift */,
+				EF1F469F2BE270B2007CDCE2 /* DetailView.swift */,
+				EF1F46A12BE270CA007CDCE2 /* RowView.swift */,
+				EF1F468F2BE26511007CDCE2 /* TabBarView.swift */,
+				EF1F46912BE26814007CDCE2 /* CustomBackgroundView.swift */,
+				EF1F46A32BE27A5F007CDCE2 /* GenerateView.swift */,
+				EF1F46A52BE27AB9007CDCE2 /* AboutSpaceView.swift */,
+				EF1F46AF2BE2952D007CDCE2 /* DetailListView.swift */,
+				EF1F46B32BE2A07F007CDCE2 /* DetailAboutObjectView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +227,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1F46962BE26BF9007CDCE2 /* TerminaTest-Medium.otf in Resources */,
+				EF1F468E2BE257EC007CDCE2 /* TerminaTest-ExtraLight.otf in Resources */,
 				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
+				EF1F46942BE26B9D007CDCE2 /* TerminaTest-Black.otf in Resources */,
 				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
+				EF1F46B22BE29FCA007CDCE2 /* TerminaTest-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,8 +268,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1F46B02BE2952D007CDCE2 /* DetailListView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				EF1F46A02BE270B2007CDCE2 /* DetailView.swift in Sources */,
+				EF1F46992BE27044007CDCE2 /* DataType.swift in Sources */,
+				EF1F46A42BE27A5F007CDCE2 /* GenerateView.swift in Sources */,
+				EF1F469E2BE2709D007CDCE2 /* CollectionView.swift in Sources */,
+				EF1F46A22BE270CA007CDCE2 /* RowView.swift in Sources */,
+				EF1F46B42BE2A07F007CDCE2 /* DetailAboutObjectView.swift in Sources */,
+				EF1F46902BE26511007CDCE2 /* TabBarView.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				EF1F46AA2BE27BA4007CDCE2 /* EnterGenerateFieldView.swift in Sources */,
+				EF1F469B2BE27067007CDCE2 /* Row.swift in Sources */,
+				EF1F46A62BE27AB9007CDCE2 /* AboutSpaceView.swift in Sources */,
+				EF1F46922BE26814007CDCE2 /* CustomBackgroundView.swift in Sources */,
+				EF1F46A82BE27B77007CDCE2 /* OvalTextFieldStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
