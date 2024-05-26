@@ -9,7 +9,7 @@ struct CustomBackgroundView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                     .frame(width: geo.size.width,
-                            height: geo.size.height)
+                           height: geo.size.height)
                     .opacity(1.0)
             }
         }
