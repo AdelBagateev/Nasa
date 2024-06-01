@@ -4,6 +4,7 @@ struct DetailListView: View {
     var row: Row
     var detailsList = asteroidsList
     @State var searchText = ""
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationView {
@@ -19,11 +20,11 @@ struct DetailListView: View {
                             VStack(alignment: .leading) {
                                 Text(asteroid.title.capitalized)
                                     .font(.custom("TerminaTest-Medium", size: 18))
-                                    .foregroundColor(.gray)
+                                    .foregroundColor(ThemeManager.textColor(for: colorScheme))
                                 
                                 Text(asteroid.title.capitalized)
                                     .font(.custom("TerminaTest-Medium", size: 12))
-                                    .foregroundColor(.gray)
+                                    .foregroundColor(ThemeManager.textColor(for: colorScheme))
                             }
                         }
                     }
@@ -42,12 +43,8 @@ struct DetailListView: View {
     }
 }
 
-
 var asteroidsList: [Row] = [
     Row(title: "Title", text: "TextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewv", image: "asteroids"),
     Row(title: "fgf", text: "Text", image: "asteroids"),
     Row(title: "dfgd", text: "Text", image: "asteroids")
 ]
-
-
-

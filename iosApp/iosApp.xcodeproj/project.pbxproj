@@ -29,6 +29,8 @@
 		EF1F46B02BE2952D007CDCE2 /* DetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F46AF2BE2952D007CDCE2 /* DetailListView.swift */; };
 		EF1F46B22BE29FCA007CDCE2 /* TerminaTest-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF1F46B12BE29FCA007CDCE2 /* TerminaTest-Bold.otf */; };
 		EF1F46B42BE2A07F007CDCE2 /* DetailAboutObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F46B32BE2A07F007CDCE2 /* DetailAboutObjectView.swift */; };
+		EFAD30BD2C0B1CE1002C34A1 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAD30BC2C0B1CE1002C34A1 /* ThemeManager.swift */; };
+		EFAD30BF2C0B1D7F002C34A1 /* Сolor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAD30BE2C0B1D7F002C34A1 /* Сolor + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		EF1F46AF2BE2952D007CDCE2 /* DetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListView.swift; sourceTree = "<group>"; };
 		EF1F46B12BE29FCA007CDCE2 /* TerminaTest-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TerminaTest-Bold.otf"; sourceTree = "<group>"; };
 		EF1F46B32BE2A07F007CDCE2 /* DetailAboutObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAboutObjectView.swift; sourceTree = "<group>"; };
+		EFAD30BC2C0B1CE1002C34A1 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		EFAD30BE2C0B1D7F002C34A1 /* Сolor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Сolor + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +114,11 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				EFAD30BE2C0B1D7F002C34A1 /* Сolor + Extension.swift */,
 				EF1F46A72BE27B77007CDCE2 /* OvalTextFieldStyle.swift */,
 				EF1F46A92BE27BA4007CDCE2 /* EnterGenerateFieldView.swift */,
+				EF1F46912BE26814007CDCE2 /* CustomBackgroundView.swift */,
+				EFAD30BC2C0B1CE1002C34A1 /* ThemeManager.swift */,
 				EF1F469C2BE27091007CDCE2 /* View */,
 				EF1F46972BE2701D007CDCE2 /* Model */,
 				EF1F468C2BE25795007CDCE2 /* Font */,
@@ -159,7 +166,6 @@
 				EF1F469F2BE270B2007CDCE2 /* DetailView.swift */,
 				EF1F46A12BE270CA007CDCE2 /* RowView.swift */,
 				EF1F468F2BE26511007CDCE2 /* TabBarView.swift */,
-				EF1F46912BE26814007CDCE2 /* CustomBackgroundView.swift */,
 				EF1F46A32BE27A5F007CDCE2 /* GenerateView.swift */,
 				EF1F46A52BE27AB9007CDCE2 /* AboutSpaceView.swift */,
 				EF1F46AF2BE2952D007CDCE2 /* DetailListView.swift */,
@@ -276,9 +282,11 @@
 				EF1F469E2BE2709D007CDCE2 /* CollectionView.swift in Sources */,
 				EF1F46A22BE270CA007CDCE2 /* RowView.swift in Sources */,
 				EF1F46B42BE2A07F007CDCE2 /* DetailAboutObjectView.swift in Sources */,
+				EFAD30BF2C0B1D7F002C34A1 /* Сolor + Extension.swift in Sources */,
 				EF1F46902BE26511007CDCE2 /* TabBarView.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				EF1F46AA2BE27BA4007CDCE2 /* EnterGenerateFieldView.swift in Sources */,
+				EFAD30BD2C0B1CE1002C34A1 /* ThemeManager.swift in Sources */,
 				EF1F469B2BE27067007CDCE2 /* Row.swift in Sources */,
 				EF1F46A62BE27AB9007CDCE2 /* AboutSpaceView.swift in Sources */,
 				EF1F46922BE26814007CDCE2 /* CustomBackgroundView.swift in Sources */,

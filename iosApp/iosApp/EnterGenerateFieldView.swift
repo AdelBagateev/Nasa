@@ -9,10 +9,7 @@ struct EnterGenerateFieldView: View {
             TextField(fieldName, text: $text)
                       .font(.custom("TerminaTest-Medium", size: 12))
                       .textFieldStyle(OvalTextFieldStyle())
-                        
-            Text(text)
-                .padding()
-                .cornerRadius(30)
+                      .keyboardType(.decimalPad)
         }
         .padding()
     }

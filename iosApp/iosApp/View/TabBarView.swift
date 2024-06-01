@@ -3,6 +3,7 @@ import SwiftUI
 struct TabBarView: View {
     @Binding var tabSelection: Int
     @Namespace private var animationNapespace
+    @Environment(\.colorScheme) var colorScheme
     
     let tabBarItems: [(image: String, title: String)] = [
         ("circle.grid.cross","Main"),
@@ -13,8 +14,7 @@ struct TabBarView: View {
         ZStack {
             Capsule()
                 .frame(height: 60)
-                .foregroundColor(Color(.secondarySystemBackground))
-                .opacity(0.1)
+                .foregroundColor(ThemeManager.tabBarColor(for: colorScheme).opacity(0.1))
                 .shadow(radius: 2)
             
             HStack {
@@ -26,8 +26,10 @@ struct TabBarView: View {
                             Spacer()
                             
                             Image(systemName: tabBarItems[index].image)
+                                .foregroundColor(index + 1 == tabSelection ? ThemeManager.tabBarIconColor(for: colorScheme) : .gray)
                             Text(tabBarItems[index].title)
-                                .font(.caption )
+                                .font(.caption)
+                                .foregroundColor(index + 1 == tabSelection ? ThemeManager.tabBarIconColor(for: colorScheme) : .gray)
                             
                             if index + 1 == tabSelection {
                                 Capsule()
@@ -42,7 +44,6 @@ struct TabBarView: View {
                                     .offset(y: 3)
                             }
                         }
-                        .foregroundColor(index + 1 == tabSelection ? .white : .gray)
                     }
                 }
             }
