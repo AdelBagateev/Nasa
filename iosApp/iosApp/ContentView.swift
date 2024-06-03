@@ -1,8 +1,10 @@
 import SwiftUI
-import shared
+import Shared
 
 struct ContentView: View {
     @State var tabSelection = 1
+    
+//    var viewModel: AboutSpaceViewModel
     
     var body: some View {
         NavigationView {

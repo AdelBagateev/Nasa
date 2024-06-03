@@ -6,7 +6,7 @@ struct CollectionView: View {
     var body: some View {
         ScrollView {
             VStack {
-                ForEach(data.rows) { row in
+                ForEach(data.rows, id: \.id) { row in
                     NavigationLink(destination: DetailView(row: row)) {
                         RowView(row: row)
                     }

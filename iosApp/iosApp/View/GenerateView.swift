@@ -1,8 +1,13 @@
 import SwiftUI
+import Shared
 
 struct GenerateView: View {
     @Environment(\.colorScheme) var colorScheme
+    @State private var showImage = false
+    @State private var imageUrl: URL?
     
+    @StateObject private var viewModel = PhotoByCoordinatesViewModelWrapper()
+
     var body: some View {
         CustomBackgroundView()
             .overlay(
@@ -21,10 +26,11 @@ struct GenerateView: View {
                             EnterGenerateFieldView(fieldName: "Latitude")
                         }
                         
-                        Spacer().frame(height: 5) 
+                        Spacer().frame(height: 5)
                         
                         Button(action: {
-                            print("Button was pressed")
+                            // Replace with actual coordinates
+                            viewModel.getPhotoByCoordinates(lat: 0, lon: 0)
                         }) {
                             Image(systemName: "hand.tap")
                                 .foregroundColor(ThemeManager.textColor(for: colorScheme))
@@ -34,5 +40,16 @@ struct GenerateView: View {
                     .padding(.top, 5)
                 }
             )
+            .sheet(isPresented: $showImage) {
+                if let imageUrl = viewModel.satellitePhotoUrl {
+                    ImageWindowView(imageUrl: imageUrl)
+                }
+            }
+            .onReceive(viewModel.$satellitePhotoUrl) { url in
+                if url != nil {
+                    showImage = true
+                    imageUrl = url
+                }
+            }
     }
 }

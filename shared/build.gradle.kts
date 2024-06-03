@@ -37,6 +37,7 @@ kotlin {
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.kodein.di)
+            implementation(libs.koin)
         }
         androidMain.dependencies {
             implementation(libs.coil)
@@ -52,12 +53,15 @@ kotlin {
             implementation(libs.compose.material3)
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.compose.ui.tooling)
+            implementation(libs.koin.android)
+            implementation(libs.koin)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.ios)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
+            implementation(libs.koin)
         }
     }
 }

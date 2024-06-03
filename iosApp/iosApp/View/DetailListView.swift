@@ -1,50 +1,49 @@
 import SwiftUI
 
 struct DetailListView: View {
-    var row: Row
-    var detailsList = asteroidsList
-    @State var searchText = ""
+    var detailsList: [AsteroidDetails]
+    @State private var searchText = ""
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(asteroids, id: \.id) { asteroid in
+                ForEach(filteredAsteroids) { asteroid in
                     NavigationLink(destination: DetailAboutObjectView(detailInfo: asteroid)) {
                         HStack {
-                            Image(asteroid.image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 150, height: 120)
+                            AsyncImage(url: URL(string: asteroid.imageUrl)) { image in
+                                image.resizable()
+                                     .aspectRatio(contentMode: .fit)
+                                     .frame(width: 150, height: 120)
+                            } placeholder: {
+                                ProgressView()
+                                    .frame(width: 150, height: 120)
+                            }
                             
                             VStack(alignment: .leading) {
-                                Text(asteroid.title.capitalized)
+                                Text(asteroid.name.capitalized)
                                     .font(.custom("TerminaTest-Medium", size: 18))
                                     .foregroundColor(ThemeManager.textColor(for: colorScheme))
                                 
-                                Text(asteroid.title.capitalized)
+                                Text(asteroid.description)
                                     .font(.custom("TerminaTest-Medium", size: 12))
                                     .foregroundColor(ThemeManager.textColor(for: colorScheme))
+                                    .lineLimit(2)
                             }
                         }
                     }
                 }
             }
             .searchable(text: $searchText)
+            .navigationTitle("Asteroids")
         }
     }
     
-    var asteroids: [Row] {
-        _ = detailsList.map { $0.title.lowercased() }
-        
-        return searchText.isEmpty ? detailsList : detailsList.filter {
-            $0.title.lowercased().contains(searchText.lowercased())
+    var filteredAsteroids: [AsteroidDetails] {
+        if searchText.isEmpty {
+            return detailsList
+        } else {
+            return detailsList.filter { $0.name.lowercased().contains(searchText.lowercased()) }
         }
     }
 }
-
-var asteroidsList: [Row] = [
-    Row(title: "Title", text: "TextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewvTextvfefewewvfewfewvfewvfewv", image: "asteroids"),
-    Row(title: "fgf", text: "Text", image: "asteroids"),
-    Row(title: "dfgd", text: "Text", image: "asteroids")
-]

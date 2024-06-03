@@ -5,6 +5,7 @@ import com.example.nasa.core.configuration.Configuration
 import com.example.nasa.core.configuration.PlatformConfiguration
 import com.example.nasa.core.network.networkModule
 import com.example.nasa.feature.about_space.aboutSpaceModule
+import com.example.nasa.feature.about_space.presentation.AboutSpaceViewModel
 import org.kodein.di.DI
 import org.kodein.di.DirectDI
 import org.kodein.di.LazyDelegate
@@ -13,6 +14,8 @@ import org.kodein.di.bindSingleton
 import org.kodein.di.direct
 import org.kodein.di.instance
 import org.kodein.di.singleton
+import org.koin.core.component.KoinComponent
+import org.koin.core.component.get
 
 object PlatformSDK {
 
@@ -48,4 +51,12 @@ object PlatformSDK {
             }
         },
     )
+}
+
+object ViewModels : KoinComponent {
+    fun getAboutSpaceViewModel() = get<AboutSpaceViewModel>()
+//    fun getNewsDetailsViewModel() = get<NewsDetailsViewModel>()
+//
+//    fun getReadLaterViewModel() = get<ReadLaterViewModel>()
+
 }

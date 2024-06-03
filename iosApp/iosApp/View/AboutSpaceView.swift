@@ -1,7 +1,10 @@
 import SwiftUI
+import Combine
+import Shared
 
 struct AboutSpaceView: View {
     @Environment(\.colorScheme) var colorScheme
+//    var viewModel: AboutSpaceViewModel
     
     var body: some View {
         CustomBackgroundView()

@@ -21,9 +21,10 @@ struct RowView: View {
                 
                 Image(row.image)
                     .resizable()
-                    .frame(width: 350, height: 216)
                     .scaledToFit()
+                    .frame(width: 350, height: 216)
             }
         }
+        .padding() 
     }
 }
